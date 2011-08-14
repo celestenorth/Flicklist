@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>Flicklist</title>
+	<style type="text/css">
+		body {
+			background: #d8d8d8;
+			font-family: "Verdana", Verdana, Arial, serif;
+		}
+		
+		#container {
+			background: #ffffff;
+			width: 700px;
+			heigh: 50px;
+			margin: 0 px auto;
+			padding: 20px 30px 20px;
+			text-align: left;
+		}
+		
+		#wrapper {	
+			background: #819FF7;
+			width: 640px;
+			min-height: 250px;
+			margin: 0 auto;
+			padding: 30px 60px 60px;
+			font-family: "Verdana", Verdana, Arial, serif;
+		}
+		
+		p {color: #2e2e2e;}	
+		
+		.movie{
+			margin-bottom:10px;
+		}
+		.movie h4 {
+			margin:0;
+		}
+		.movie p {
+			margin:0;	
+		}
+		
+		h3 {
+			text-decoration: underline;
+			font-style: strong;
+			color: #ffffff; 
+		}
+		
+		h2 {
+			font-style: strong;
+			color: #ffffff;
+			font-size: 17px;
+		}
+			
+		h1 {
+			color: #819FF7;
+			text-align: center;
+			font-style: strong;
+		}
+		
+		.right {
+			text-align: right;
+		}
+			
+		#sorting {
+			height: 60px;
+		}
+		
+		#sorting h2 {
+			float: right;
+			padding-left: 20px;
+		}
+		
+		#footer {
+			background: #ffffff;
+			width: 700px;
+			height: 25px;
+			margin: 0 px auto;
+			padding: 20px 30px 20px;
+			text-align: center		
+		}
+			
+	</style>
+  </head>
+  <body>
+	<div id="container">
+		<h1>Welcome to Flicklist!</h1>
+		<p>Do you remember how many movies you've seen in your life? Do you remember them all?</p>
+		<p>Use <strong>Flicklist</strong> to keep a simple (yet efficient) track of all the flicks you've watched</p>
+	</div>
+
+    <div>
+      {% block content %}{% endblock %}
+    </div>
+
+    <div id="footer">
+	<p>This is my first Python form ever. It still has a lot of work to do.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div id="wrapper">
+<form method="POST">
+
+<p>Submit the information of the last movie you saw:</p>	
+	<table border=0>
+		<tr>
+			<td> Title:</td>
+			<td><input name="title"/></td>
+		</tr>  
+		<tr>
+			<td>Director:</td>
+			<td><input name="director"/></td>
+		</tr>
+		<tr>
+			<td>Year:</td>
+			<td><input name="year"/></td>  
+		</tr>
+		<tr>
+			<td></td>
+			<td class="right"><input type="submit"/></td>
+		</tr>  
+  </table>
+</form>
+</div>
+{% endblock %}
+

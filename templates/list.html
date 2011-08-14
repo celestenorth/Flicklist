@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div id="wrapper">
+	<p class="right"><a href="/">Submit another movie</a></p>
+<h3>Flicks!</h3>
+
+<div id="sorting">
+<h2><a href="/list?order=Year">Sort by Year</a></h2>
+<h2><a href="/list?order=Director">Sort by Director</a></h2>
+<h2><a href="/list?order=Title">Sort by Title</a></h2>
+</div>
+
+{% for movie in peliculas %}
+<div class="movie">
+
+    <h4><a href='{{movie.result.imdburl}}'>Title: {{movie.Title}}</a></h4>
+    <p>Director: {{movie.Director}}</p>
+    <p>Year: {{movie.Year}}</p>
+    
+</div>
+{% endfor %}
+
+</div>
+
+{% endblock %}
+
