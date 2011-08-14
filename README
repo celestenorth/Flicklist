@@ -1,0 +1,11 @@
+This is very simple code to create a form about movies in python. What it does is that you can fill a form with title, director and year. The intention is to have a very simple (ubersimple) track of the movies you watch.
+
+In addition to having the form, you can sort the results by title, director or year. As a plus, the titles in the movies turn into IMDB links to their profiles.
+
+So far you have to input the title correctly, otherwise, it will send an error.
+
+This was a small piece of code borned in SuperHappyDevHouse Mexico City on august, 2011. I'm an aspiring hacker.
+
+Hope you liked it :)
+
+
